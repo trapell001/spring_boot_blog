@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Đăng Kí</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/login.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="container">
+</div>
+<div class="container">
+    <div class="login-form">
+        <form th:action="@{/reg}" th:object="${userSaveRequest}"method="post">
+            <h1>Đăng Kí</h1>
+            <div class="input-box">
+                <i ></i>
+                <input th:field="${userSaveRequest.userName}" type="text" placeholder="Nhập username">
+            </div>
+            <div class="input-box">
+                <i ></i>
+                <input th:field="${userSaveRequest.name}" type="text" placeholder="Nhập Họ Tên">
+            </div>
+            <div class="input-box">
+                <i ></i>
+                <input th:field="${userSaveRequest.phone}" type="text" placeholder="Nhập SĐT">
+            </div>
+            <div class="input-box">
+                <i ></i>
+                <input th:field="${userSaveRequest.address}" type="text" placeholder="Nhập Address">
+            </div>
+            <div class="input-box">
+                <i ></i>
+                <input th:field="${userSaveRequest.email}" type="text" placeholder="Nhập Email">
+            </div>
+            <div class="input-box">
+                <i ></i>
+                <input th:field="${userSaveRequest.password}" type="password" placeholder="Nhập mật khẩu">
+            </div>
+            <div class="btn-box">
+                <button type="submit" >
+                    Đăng Kí
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

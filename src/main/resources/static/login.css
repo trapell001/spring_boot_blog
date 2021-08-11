@@ -1,0 +1,72 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container .logo{
+    position: absolute;
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.container img{
+    display: inline-block;
+}
+.login-form{
+    margin-left: 280px;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 2px dotted #cccccc;
+    border-radius: 10px;
+}
+.container li{
+    position: absolute;
+    color: rgb(196 28 33);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 280px;
+    padding-left: 80px;
+}
+h1{
+    color: #007F49;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.input-box{
+    margin-bottom: 10px;
+}
+.input-box input{
+    padding: 7.5px 15px;
+    width: 100%;
+    border: 1px solid #007F49;
+    outline: none;
+}
+.btn-box{
+    text-align: right;
+    margin-top: 30px;
+}
+.btn-box button{
+    padding: 7.5px 15px;
+    border-radius: 2px;
+    background-color: #007F49;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+.container .tick-box label{
+    color: #007F49;
+    font-size: 15px;
+    line-height: 30px;
+    margin-left: 10px;
+}
