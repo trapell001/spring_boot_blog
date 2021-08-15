@@ -41,14 +41,4 @@ public class UserController {
         Page<UserResponse> userResponses = userService.getAll(pageRequest);
         return new ResponseEntity<>(userResponses,HttpStatus.OK);
     }
-    @GetMapping("/reg")
-    public String reg(Model model){
-        model.addAttribute("userSaveRequest" , new UserSaveRequest());
-        return "reg";
-    }
-    @PostMapping("/reg")
-    public String reg(@ModelAttribute UserSaveRequest userSaveRequest){
-        userService.save(userSaveRequest);
-        return "index";
-    }
 }
